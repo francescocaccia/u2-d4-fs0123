@@ -1,0 +1,110 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #666666;
+}
+
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    background-color: peru;
+    padding: 10px;
+    background-color: #eeefbd;
+    box-shadow: black;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.527),
+            rgba(252, 248, 248, 0.13));
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transform: scaleX(1, 1);
+    transition: transform 0.2s, boxshadow 1s;
+}
+
+.post:hover {
+    transform: scaleX(1);
+    box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.689);
+}
+
+.titoli {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.testo {
+    font-size: 1rem;
+}
+
+/*++++++++++++++++++++++++++++CARD+++++++++++++++++++++++++++++++++++++++++++++*/
+.card1 {
+    background-color: #eeefbd;
+    transform: rotate(356deg);
+    animation: appear 1s ease-in-out 0.1s both;
+}
+
+
+.card2 {
+    background-color: #c2e7c1;
+    transform: rotate(-356deg);
+    animation: appear 1s ease-in-out 0.1s both;
+}
+
+.card3 {
+    background-color: #bcbadc;
+    transform: rotate(356deg);
+    animation: appear 1s ease-in-out 0.1s both;
+}
+
+.card4 {
+    background-color: #c2e7c1;
+    transform: rotate(370deg);
+    animation: appear 1s ease-in-out 0.1s both;
+}
+
+.card5 {
+    background-color: #eeefbd;
+    transform: rotate(356deg);
+    animation: appear 1s ease-in-out 0.1s both;
+}
+
+.card6 {
+    background-color: #bcbadc;
+    transform: rotate(352deg);
+    animation: appear 1s ease-in-out 0.1s both;
+}
+
+.card7 {
+    background-color: #eeefbd;
+    transform: rotate(356deg);
+    animation: appear 1s ease-in-out 0.1s both;
+}
+
+.card8 {
+    background-color: #c2e7c1;
+    transform: rotate(370deg);
+    animation: appear 1s ease-in-out 0.1s both;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++KeyFrames+++++++++++++++++++++++++++*/
+
+@keyframes post-it{
+    0%{
+        transform: all scale(0.2);
+        opacity: 0;
+    }
+    100%{
+        transform: all scale(1);
+        opacity: 1;
+    }
+}
